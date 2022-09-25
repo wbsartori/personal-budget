@@ -10,6 +10,11 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
+enum movementType {
+  ENTRY
+  ISSUE
+}
+
 model Person {
     id String @id @default(uuid())
     name String
@@ -19,3 +24,16 @@ model Person {
 
     @@map("person")
 }
+
+model Movement {
+    id String @id @default(uuid())
+    id_person String
+    description String
+    type movementType @default(ENTRY)
+    value String
+    createdAt DateTime
+
+    @@map("movement")
+}
+
+model BillsToPay{}
