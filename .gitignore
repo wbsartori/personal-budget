@@ -1,5 +1,5 @@
-.sqlite
-.idea
+*.sqlite
+*.idea
 # Logs
 logs
 *.log
