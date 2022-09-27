@@ -1,4 +1,6 @@
-# personal-budget
+# Personal Budget
+
+---
 
 # Table to Pessoa
 - id             - id de criação
@@ -8,6 +10,7 @@
 - email          - E-mail da pessoa
 - status         - Status (Ativo ou Inativo)
 
+---
 # Table to Income
 - id             - id de criação
 - idPerson       - id da pessoa vinculada a renda
@@ -17,6 +20,7 @@
 - createdAt      - Data de criação
 - updatedAt      - Data de atualização
 
+---
 # Table to movement
  - id             - Id de criação
  - idPerson       - Id da pessoa vinculada ao movimento
@@ -28,3 +32,4 @@
  - status         - Status (Em aberto ou Finalizado)
  - createdAt      - Data de criação
  - updatedAt      - Data de atualização
+ - ---
