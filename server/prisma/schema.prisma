@@ -20,18 +20,38 @@ model Person {
     createdAt DateTime @default(now())
     updatedAt DateTime @default(now())
 
+    movement Movement[]
+    income Income[]
     @@map("person")
+}
+
+model Income {
+    id String @id @default(uuid())
+    idPerson String
+    description String
+    incomeDate String
+    value Decimal
+
+    createdAt DateTime @default(now())
+    updatedAt DateTime @default(now())
+
+    person Person @relation(fields: [idPerson], references: [id])
+    @@map("income")
 }
 
 model Movement {
     id String @id @default(uuid())
-    id_person String
+    idPerson String
     description String
-    type String
-    value String
+    classification String
+    typeOfCost String
+    movementDate String
+    value Decimal
     status String
-    createdAt DateTime
+    createdAt DateTime @default(now())
     updatedAt DateTime @default(now())
+
+    person Person @relation(fields: [idPerson], references: [id])
 
     @@map("movement")
 }

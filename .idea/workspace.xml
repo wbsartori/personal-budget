@@ -1,7 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4e191106-362a-4ab4-9711-313673c391d9" name="Changes" comment="finalizado rotas de pessoa" />
+    <list default="true" id="4e191106-362a-4ab4-9711-313673c391d9" name="Changes" comment="finalizado rotas de pessoa">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/prisma/migrations/20220925231347_create_person/migration.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/prisma/migrations/20220926224029_create_table_movement_and_alter_person/migration.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/prisma/migrations/20220926224308_alter_tables_movement_and_person/migration.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/prisma/migrations/20220926225316_alter_table_person/migration.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/prisma/migrations/20220926225934_alter_table_person/migration.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/prisma/migrations/20220927002005_alter_table_person/migration.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/prisma/migrations/migration_lock.toml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/prisma/schema.prisma" beforeDir="false" afterPath="$PROJECT_DIR$/server/prisma/schema.prisma" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/database/db.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/database/db.sqlite" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/server.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/server.ts" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -47,7 +60,7 @@
       <workItem from="1664146607419" duration="449000" />
       <workItem from="1664147068732" duration="495000" />
       <workItem from="1664147582207" duration="565000" />
-      <workItem from="1664231106535" duration="5597000" />
+      <workItem from="1664231106535" duration="9739000" />
     </task>
     <task id="LOCAL-00001" summary="projeto inicial">
       <created>1664146641788</created>
@@ -84,7 +97,21 @@
       <option name="project" value="LOCAL" />
       <updated>1664239172270</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="finalizado rotas de pessoa">
+      <created>1664239452139</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1664239452139</updated>
+    </task>
+    <task id="LOCAL-00007" summary="finalizado rotas de pessoa">
+      <created>1664239480142</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1664239480142</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
