@@ -1,16 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4e191106-362a-4ab4-9711-313673c391d9" name="Changes" comment="finalizado rotas de pessoa">
+    <list default="true" id="4e191106-362a-4ab4-9711-313673c391d9" name="Changes" comment="alterado tabelas e criado rotas de renda">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/prisma/migrations/20220925231347_create_person/migration.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/prisma/migrations/20220926224029_create_table_movement_and_alter_person/migration.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/prisma/migrations/20220926224308_alter_tables_movement_and_person/migration.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/prisma/migrations/20220926225316_alter_table_person/migration.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/prisma/migrations/20220926225934_alter_table_person/migration.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/prisma/migrations/20220927002005_alter_table_person/migration.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/prisma/migrations/migration_lock.toml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/server/prisma/schema.prisma" beforeDir="false" afterPath="$PROJECT_DIR$/server/prisma/schema.prisma" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/src/database/db.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/database/db.sqlite" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/src/server.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/server.ts" afterDir="false" />
@@ -60,7 +52,7 @@
       <workItem from="1664146607419" duration="449000" />
       <workItem from="1664147068732" duration="495000" />
       <workItem from="1664147582207" duration="565000" />
-      <workItem from="1664231106535" duration="9739000" />
+      <workItem from="1664231106535" duration="10529000" />
     </task>
     <task id="LOCAL-00001" summary="projeto inicial">
       <created>1664146641788</created>
@@ -111,7 +103,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664239480142</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="alterado tabelas e criado rotas de renda">
+      <created>1664244309310</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1664244309310</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -132,6 +131,7 @@
     <MESSAGE value="projeto inicial" />
     <MESSAGE value="tables" />
     <MESSAGE value="finalizado rotas de pessoa" />
-    <option name="LAST_COMMIT_MESSAGE" value="finalizado rotas de pessoa" />
+    <MESSAGE value="alterado tabelas e criado rotas de renda" />
+    <option name="LAST_COMMIT_MESSAGE" value="alterado tabelas e criado rotas de renda" />
   </component>
 </project>

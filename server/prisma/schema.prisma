@@ -1,6 +1,3 @@
-// This is your Prisma schema file,
-// learn more about it in the docs: https://pris.ly/d/prisma-schema
-
 generator client {
   provider = "prisma-client-js"
 }
@@ -11,47 +8,45 @@ datasource db {
 }
 
 model Person {
-    id String @id @default(uuid())
-    name String
-    birthDate String
-    gender String
-    email String
-    status String
-    createdAt DateTime @default(now())
-    updatedAt DateTime @default(now())
+  id        String     @id @default(uuid())
+  name      String
+  birthDate String
+  gender    String
+  email     String
+  status    String
+  createdAt DateTime   @default(now())
+  updatedAt DateTime   @default(now())
+  income    Income[]
+  movement  Movement[]
 
-    movement Movement[]
-    income Income[]
-    @@map("person")
+  @@map("person")
 }
 
 model Income {
-    id String @id @default(uuid())
-    idPerson String
-    description String
-    incomeDate String
-    value Decimal
+  id          String   @id @default(uuid())
+  idPerson    String
+  description String
+  incomeDate  String
+  value       Decimal
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @default(now())
+  person      Person   @relation(fields: [idPerson], references: [id])
 
-    createdAt DateTime @default(now())
-    updatedAt DateTime @default(now())
-
-    person Person @relation(fields: [idPerson], references: [id])
-    @@map("income")
+  @@map("income")
 }
 
 model Movement {
-    id String @id @default(uuid())
-    idPerson String
-    description String
-    classification String
-    typeOfCost String
-    movementDate String
-    value Decimal
-    status String
-    createdAt DateTime @default(now())
-    updatedAt DateTime @default(now())
+  id             String   @id @default(uuid())
+  idPerson       String
+  description    String
+  classification String
+  typeOfCost     String
+  movementDate   String
+  value          Decimal
+  status         String
+  createdAt      DateTime @default(now())
+  updatedAt      DateTime @default(now())
+  person         Person   @relation(fields: [idPerson], references: [id])
 
-    person Person @relation(fields: [idPerson], references: [id])
-
-    @@map("movement")
+  @@map("movement")
 }
