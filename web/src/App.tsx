@@ -1,9 +1,13 @@
+import Navbar from "./components/Navbar/Navbar"
 
+import './styles/main.css';
 
 function App() {
 
   return (
-    <div>Olá Mundo!</div>
+      <div>
+        <Navbar />
+      </div>
   )
 }
 
