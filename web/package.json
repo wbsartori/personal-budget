@@ -9,6 +9,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@headlessui/react": "^1.7.3",
+    "@heroicons/react": "^2.0.12",
     "@radix-ui/react-checkbox": "^1.0.0",
     "@radix-ui/react-dialog": "^1.0.0",
     "@radix-ui/react-toggle-group": "^1.0.0",

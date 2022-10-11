@@ -16,14 +16,9 @@ import {Home} from "./pages/home/Home";
 function App() {
 
   return (
-      <div className="flex">
           <Router>
-              <Routes>
-                  <Route path="/" element={<Home />} />
-                  <Route path="/home" element={<Home />} />
-              </Routes>
+              <Navbar />
           </Router>
-      </div>
   )
 }
 
