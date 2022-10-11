@@ -1,83 +1,43 @@
-export function Person(){
+import {Link} from "react-router-dom";
+
+export function Person() {
     return (
         <>
-            <h1>Person</h1>
+            <div className="w-full mb-5">
+                <a className="h-10 w-1/12 bg-green-600 rounded-md"
+                   href="/person/new">
+                    <button type="submit" className="h-10 w-1/12 bg-green-600 rounded-md">
+                        Novo
+                    </button>
+                </a>
+            </div>
+            <hr/>
+            <h1 className="mt-5">Person</h1>
 
-            {/*- name           - Nome da pessoa*/}
-            {/*- birthDate      - Data de nascimento*/}
-            {/*- gender         - Gen�ro (Masculino ou Feminino)*/}
-            {/*- email          - E-mail da pessoa*/}
-            {/*- status         - Status (Ativo ou Inativo)*/}
+            <table className="w-full text-sm text-left text-gray-500 dark:text-gray-400">
+                <thead className="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+                <tr>
+                    <th scope="col" className="py-3 px-6">id</th>
+                    <th scope="col" className="py-3 px-6">Nome</th>
+                    <th scope="col" className="py-3 px-6">e-mail</th>
+                    <th scope="col" className="py-3 px-6">status</th>
+                    <th scope="col" className="py-3 px-6">Ações</th>
+                </tr>
+                </thead>
+                <tbody>
 
-            <div className="w-3/6 mt-5">
-                <label htmlFor="" className="text-white">ID </label>
-                <input className="w-full
-                                  rounded-md
-                                  focus:border-indigo-500
-                                  focus:ring-indigo-500
-                                  h-8
-                                  mb-5"
-                       type="text"
-                       id="id"
-                       name="id"
-                       placeholder="ID"/>
-            </div>
-            <div className="w-3/6 mt-5">
-                <label htmlFor="" className="text-white">Nome </label>
-                <input className="w-full
-                                  rounded-md
-                                  focus:border-indigo-500
-                                  focus:ring-indigo-500
-                                  h-8
-                                  mb-5"
-                       type="text"
-                       id="name"
-                       name="name"
-                       placeholder="Nome completo"/>
-            </div>
-            <div className="w-3/6 mt-5">
-                <label htmlFor="" className="text-white">Data de nascimento </label>
-                <input className="w-full
-                                  rounded-md
-                                  focus:border-indigo-500
-                                  focus:ring-indigo-500
-                                  h-8
-                                  mb-5"
-                       type="date"
-                       id="birthDate"
-                       name="birthDate"/>
-            </div>
-            <div className="w-3/6 mt-5">
-                <label htmlFor="" className="text-white">Genero </label>
-                <select name="gender" id="gender" className="w-full
-                                  rounded-md
-                                  focus:border-indigo-500
-                                  focus:ring-indigo-500
-                                  h-8
-                                  mb-5">
-                    <option></option>
-                    <option value="M">Masculino</option>
-                    <option value="F">Feminino</option>
-                </select>
-            </div>
-            <div className="w-3/6 mt-5">
-                <label htmlFor="" className="text-white">E-mail </label>
-                <input className="w-full
-                                  rounded-md
-                                  focus:border-indigo-500
-                                  focus:ring-indigo-500
-                                  h-8
-                                  mb-5"
-                       type="email"
-                       id="name"
-                       name="name"
-                       placeholder="E-mail"/>
-            </div>
-
-            <div className="w-full">
-                <button className="h-12 w-3/12 bg-green-600 rounded-md">Salvar</button>
-                <button className="h-12 w-3/12 bg-red-600 rounded-md ml-2">Cancelar</button>
-            </div>
+                <tr className="bg-gray-900 border-b dark:bg-gray-800 dark:border-gray-700">
+                    <td className="py-4 px-6">1</td>
+                    <td className="py-4 px-6">Wesley</td>
+                    <td className="py-4 px-6">wbsartori</td>
+                    <td className="py-4 px-6">Ativo</td>
+                    <td className="py-4 px-6">
+                        <button>Editar</button>
+                        <button>Remover</button>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
         </>
     );
 }

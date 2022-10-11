@@ -4,6 +4,7 @@ import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
 import {Route, Routes} from "react-router-dom";
 import {Home} from "../../pages/home/Home";
 import {Person} from "../../pages/person/Person";
+import {NewPerson} from "../../pages/person/NewPerson";
 import {Income} from "../../pages/income/Income";
 import {Movement} from "../../pages/movement/Movement";
 
@@ -194,6 +195,7 @@ export default function Example() {
                             <Route path="/" element={<Home />} />
                             <Route path="/home" element={<Home />} />
                             <Route path="/person" element={<Person />} />
+                            <Route path="/person/new" element={<NewPerson />} />
                             <Route path="/income" element={<Income />} />
                             <Route path="/movement" element={<Movement />} />
                         </Routes>
