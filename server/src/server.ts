@@ -224,6 +224,7 @@ app.post("/movement", async (request, response) => {
             "description": body.description,
             "classification": body.classification,
             "typeOfCost": body.typeOfCost,
+            'typeOfPayment': body.typeOfPayment,
             "movementDate": body.movementDate,
             "value": body.value,
             "status": body.status
@@ -256,6 +257,7 @@ app.put("/movement/:id", async (request, response) => {
                 "description": body.description,
                 "classification": body.classification,
                 "typeOfCost": body.typeOfCost,
+                "typeOfPayment": body.typeOfPayment,
                 "movementDate": body.movementDate,
                 "value": body.value,
                 "status": body.status

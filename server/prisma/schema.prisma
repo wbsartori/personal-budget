@@ -41,6 +41,7 @@ model Movement {
   description    String
   classification String
   typeOfCost     String
+  typeOfPayment  String
   movementDate   String
   value          Decimal
   status         String
