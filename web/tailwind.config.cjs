@@ -8,7 +8,11 @@ module.exports = {
     fontFamily: {
       sans: ['Inter','sans-serif']
     },
-    extend: {},
+    extend: {
+      backgroundColor:{
+        'personal-color-red' : 'bg-red-600'
+      }
+    },
   },
   plugins: [],
 }

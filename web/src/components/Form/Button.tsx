@@ -2,7 +2,7 @@ import {ButtonHTMLAttributes, InputHTMLAttributes} from "react";
 
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
     text: string;
-    link: string;
+    link?: string;
 }
 
 export function Button(props :ButtonProps) {
@@ -11,8 +11,9 @@ export function Button(props :ButtonProps) {
            href={props.link}>
             <button
                 {...props}
-                type="submit"
-                className="h-10 w-1/12 bg-green-600 rounded-md text-white">
+                type={props.type}
+                className="h-10 w-1/12 bg-green-600 rounded-md text-white"
+            >
                 {props.text}
             </button>
         </a>
