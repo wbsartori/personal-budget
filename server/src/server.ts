@@ -14,11 +14,13 @@ app.get("/person", async (request, response) => {
     const person = await prisma.person.findMany();
     if (person.length > 0) {
         return response.status(201).json({
+            type: "success",
             message: "Pessoas listadas com sucesso!",
             data: person
         })
     } else {
         return response.status(201).json({
+            type: "error",
             message: "Nenhuma pessoa cadastrada no momento!",
             data: person
         })

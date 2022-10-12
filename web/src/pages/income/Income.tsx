@@ -1,4 +1,5 @@
 import {Link} from "react-router-dom";
+import {Button} from "../../components/Form/Button";
 
 export function Income() {
     return (
@@ -6,12 +7,7 @@ export function Income() {
             <h1 className="mt-5 text-white mb-5">Rendas</h1>
             <hr/>
             <div className="w-full mt-5 mb-5">
-                <a className="h-10 w-1/12 bg-green-600 rounded-md"
-                   href="/income/new">
-                    <button type="submit" className="h-10 w-1/12 bg-green-600 rounded-md">
-                        Novo
-                    </button>
-                </a>
+                <Button text="Novo" link="income/new" />
             </div>
             <table className="w-full text-sm text-left text-gray-500 dark:text-gray-400">
                 <thead className="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
