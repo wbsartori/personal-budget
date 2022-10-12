@@ -7,6 +7,9 @@ import {Person} from "../../pages/person/Person";
 import {NewPerson} from "../../pages/person/NewPerson";
 import {Income} from "../../pages/income/Income";
 import {Movement} from "../../pages/movement/Movement";
+import {NewIncome} from "../../pages/income/NewIncome";
+import {NewMovement} from "../../pages/movement/NewMovement";
+import {Dash} from "../../pages/dashboard/Dash";
 
 const user = {
     name: 'Tom Cook',
@@ -16,7 +19,6 @@ const user = {
 }
 const navigation = [
     { name: 'Dashboard', href: '/', current: true },
-    { name: 'Home', href: '/home', current: false },
     { name: 'Pessoa', href: '/person', current: false },
     { name: 'Renda', href: '/income', current: false },
     { name: 'Movimentações', href: '/movement', current: false },
@@ -190,14 +192,15 @@ export default function Example() {
                     )}
                 </Disclosure>
                 <main>
-                    <div className="mx-auto max-w-7xl py-6 sm:px-6 lg:px-8">
+                    <div className="mx-auto max-w-12xl py-6 sm:px-6 lg:px-8">
                         <Routes>
-                            <Route path="/" element={<Home />} />
-                            <Route path="/home" element={<Home />} />
+                            <Route path="/" element={<Dash />} />
                             <Route path="/person" element={<Person />} />
                             <Route path="/person/new" element={<NewPerson />} />
                             <Route path="/income" element={<Income />} />
+                            <Route path="/income/new" element={<NewIncome />} />
                             <Route path="/movement" element={<Movement />} />
+                            <Route path="/movement/new" element={<NewMovement />} />
                         </Routes>
                     </div>
                 </main>

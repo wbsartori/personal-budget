@@ -3,7 +3,9 @@ import {Link} from "react-router-dom";
 export function Person() {
     return (
         <>
-            <div className="w-full mb-5">
+            <h1 className="mt-5 text-white mb-5">Pessoas</h1>
+            <hr/>
+            <div className="w-full mt-5 mb-5">
                 <a className="h-10 w-1/12 bg-green-600 rounded-md"
                    href="/person/new">
                     <button type="submit" className="h-10 w-1/12 bg-green-600 rounded-md">
@@ -12,8 +14,6 @@ export function Person() {
                 </a>
             </div>
             <hr/>
-            <h1 className="mt-5">Person</h1>
-
             <table className="w-full text-sm text-left text-gray-500 dark:text-gray-400">
                 <thead className="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
                 <tr>
