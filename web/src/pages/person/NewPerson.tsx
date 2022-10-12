@@ -4,7 +4,9 @@ export function NewPerson() {
 
     return (
         <>
-            <div className="w-full mb-5">
+            <h1 className="mt-5 text-white mb-5">Pessoas \ Novo</h1>
+            <hr/>
+            <div className="w-full mt-5 mb-5">
                 <a className="h-10 w-1/12 bg-green-600 rounded-md"
                    href="/person/new">
                     <button type="submit" className="h-10 w-1/12 bg-green-600 rounded-md">
@@ -18,22 +20,20 @@ export function NewPerson() {
                     </button>
                 </a>
             </div>
-            <hr/>
-            <h1 className="mt-5">Person</h1>
             <div className="flex flex-col gap-2 w-3/6">
-                <label htmlFor="" className="text-white">ID </label>
-                <Input type="text" id="id" name="id" placeholder="ID"/>
+                <label htmlFor="id" className="text-white">ID </label>
+                <Input type="text" id="id" name="id" placeholder="ID" disabled/>
             </div>
             <div className="flex flex-col gap-2 w-3/6">
-                <label htmlFor="" className="text-white">Nome </label>
+                <label htmlFor="name" className="text-white">Nome </label>
                 <Input type="text" id="name" name="name" placeholder="Nome completo"/>
             </div>
             <div className="flex flex-col gap-2 w-3/6">
-                <label htmlFor="" className="text-white">Data de nascimento </label>
+                <label htmlFor="birthDate" className="text-white">Data de nascimento </label>
                 <Input type="date" id="birthDate" name="birthDate" />
             </div>
-            <div className="flex flex-col gap-2 w-3/6">
-                <label htmlFor="" className="text-white">Genero </label>
+            <div className="flex flex-col gap-2 w-3/12">
+                <label htmlFor="gender" className="text-white">Genero </label>
                 <select name="gender" id="gender" className="w-full
                                   rounded-md
                                   focus:border-indigo-500
@@ -46,8 +46,8 @@ export function NewPerson() {
                 </select>
             </div>
             <div className="flex flex-col gap-2 w-3/6">
-                <label htmlFor="" className="text-white">E-mail </label>
-                <Input type="email" id="name" name="name" placeholder="E-mail"/>
+                <label htmlFor="email" className="text-white">E-mail </label>
+                <Input type="email" id="email" name="email" placeholder="E-mail"/>
             </div>
         </>
     );

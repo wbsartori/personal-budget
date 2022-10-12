@@ -6,7 +6,7 @@ export function Input(props :InputProps) {
     return (
         <input
             {...props}
-            className="w-full rounded-md focus:border-indigo-500 focus:ring-indigo-500 h-10 mb-5"
+            className="w-6/12 rounded-md focus:border-indigo-500 focus:ring-indigo-500 h-10 mb-5 px-3"
         />
     );
 }

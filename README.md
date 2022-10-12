@@ -27,6 +27,7 @@
  - description    - Descrição do movimento
  - classification - Tipo e classificação(Lazer, Saúde, Mercado, etc...)
  - typeOfCost     - Tipo de custo (Renda fixa ou variável)
+ - typeOfPayment  - Tipo de pagamento (Dinheiro, cartão ou outros)
  - movementDate   - Data de movimentação do custo
  - value          - Valor do custo
  - status         - Status (Em aberto ou Finalizado)
