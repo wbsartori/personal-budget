@@ -1,4 +1,5 @@
 import {Input} from "../../components/Form/Input";
+import {Button} from "../../components/Form/Button";
 
 export function NewIncome() {
 

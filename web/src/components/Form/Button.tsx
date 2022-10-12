@@ -11,7 +11,8 @@ export function Button(props :ButtonProps) {
            href={props.link}>
             <button
                 {...props}
-                type="submit" className="h-10 w-1/12 bg-green-600 rounded-md text-white">
+                type="submit"
+                className="h-10 w-1/12 bg-green-600 rounded-md text-white">
                 {props.text}
             </button>
         </a>

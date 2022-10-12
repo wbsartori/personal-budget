@@ -1,6 +1,7 @@
 import {Link} from "react-router-dom";
 import {useEffect, useState} from "react";
 import axios from "axios";
+import {Button} from "../../components/Form/Button";
 
 interface IPerson {
     id: string;
@@ -26,12 +27,7 @@ export function Person() {
             <h1 className="mt-5 text-white mb-5">Pessoas</h1>
             <hr/>
             <div className="w-full mt-5 mb-5">
-                <a className="h-10 w-1/12 bg-green-600 rounded-md"
-                   href="/person/new">
-                    <button type="submit" className="h-10 w-1/12 bg-green-600 rounded-md">
-                        Novo
-                    </button>
-                </a>
+                <Button text="Novo" link="person/new" />
             </div>
             <hr/>
             <table className="w-full text-sm text-left text-gray-500 dark:text-gray-400">
