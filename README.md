@@ -1,8 +1,20 @@
-# Personal Budget
+# API - Personal Budget
 
 ---
 
-# Table to Pessoa
+### Description
+
+---
+
+<p>Api developed in nodejs with typescript, the project was made to perform the personal management of your accounts.</p>
+
+---
+
+# Tables to system
+
+---
+
+### Table to Pessoa
 - id             - id de criação
 - name           - Nome da pessoa
 - birthDate      - Data de nascimento
@@ -11,7 +23,7 @@
 - status         - Status (Ativo ou Inativo)
 
 ---
-# Table to Income
+### Table to Income
 - id             - id de criação
 - idPerson       - id da pessoa vinculada a renda
 - description    - Descrição da renda
@@ -21,7 +33,7 @@
 - updatedAt      - Data de atualização
 
 ---
-# Table to movement
+### Table to movement
  - id             - Id de criação
  - idPerson       - Id da pessoa vinculada ao movimento
  - description    - Descrição do movimento
